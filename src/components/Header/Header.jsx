@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css'
 import profilePic from './../../assets/profilePic.png'
 import cv from './../../assets/CV.pdf'
-import { BsFillArrowRightCircleFill } from 'react-icons/bs'
+import { BsFillArrowDownCircleFill } from 'react-icons/bs'
 import Social from './Social';
 
 const Header = () => {
@@ -24,7 +24,14 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <small>Scrol Down <span><BsFillArrowRightCircleFill /></span></small>
+                <div className="scroll">
+                    <a href="#footer"><small>Scroll <span>Down <BsFillArrowDownCircleFill /></span></small></a>
+                </div>
+            </div>
+            <div class="divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
             </div>
         </header>
     )

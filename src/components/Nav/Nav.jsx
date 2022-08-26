@@ -25,7 +25,7 @@ const Nav = () => {
                         <a href="#projects"><AiOutlineQrcode /></a>
                     </li>
                     <li className="menu-item">
-                        <a href="#contactscls"><AiFillMessage /></a>
+                        <a href="#contacts"><AiFillMessage /></a>
                     </li>
                 </ul>
             </div>

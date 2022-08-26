@@ -2,28 +2,34 @@ nav {
     width: 100%;
     margin: 0 auto;
     position: fixed;
+    padding-bottom: 5rem;
+    z-index: 99;
+
     .nav__container {
         width: 400px;
-        height: 60px;
+        height: 50px;
         margin-top: -6rem;
-        background-color: rgba(43, 83, 192, 0.267);
+        background-color: rgba(149, 150, 153, 0.384);
         backdrop-filter: blur(10px);
-        border-radius: 10px;
+        border-radius: 25px;
+
         .menu {
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+
             .menu-item {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height:40px;
+                height: 40px;
                 width: 70px;
-                
+
                 a {
                     font-size: 1.3rem;
+                    color: var(--accent-color);
                 }
             }
         }

@@ -44,7 +44,6 @@ body {
   width: var(--width-lg);
   height: 100vh;
   margin: 0 auto;
-  padding: auto 0;
 }
 
 h1,
