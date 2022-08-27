@@ -1,17 +1,26 @@
 .about {
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background-color: var(--dark-color);
   color: white;
+  margin-top: 4rem;
 }
 .about .about__container {
-  padding-top: 5rem;
+  padding: 3rem 1.5rem;
 }
-.about svg {
+.about .divider-top svg {
   width: 100%;
-  margin-top: -20rem;
-  transform: rotate(180deg);
+  transform: rotate(0deg);
+  margin-top: -7.6rem;
 }
-.about svg .shape-fill {
+.about .divider-top svg .shape-fill {
+  fill: var(--dark-color);
+}
+.about .divider-bottom svg {
+  width: 100%;
+  transform: rotate(180deg);
+  margin-bottom: -7.6rem;
+}
+.about .divider-bottom svg .shape-fill {
   fill: var(--dark-color);
 }/*# sourceMappingURL=About.css.map */

@@ -1,23 +1,3 @@
-@keyframes clockWise {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes counterClockWise {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(-360deg);
-    }
-}
-
 @keyframes shake {
     from {
         transform: translateY(0px);
@@ -31,143 +11,128 @@
 
 header {
     width: 100%;
-    height: 100vh;
-    position: relative;
-    
+    overflow: hidden;
+    margin-bottom: 6rem;
     .header__container {
         height: 100%;
+        width: 100%;
         display: flex;
+        flex-direction: column;
         padding: 0rem 2rem;
         margin: 0rem auto;
         align-items: center;
         justify-content: space-between;
 
+        .social {
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            position: absolute;
+            top: 17rem;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    display: flex;
+                    height: fit-content;
+                    color: var(--dark-color);
+                    font-size: 1.6rem;
+                    align-items: center;
+                    justify-content: center;
+                    margin: .4rem;
+                }
+
+                a:hover {
+                    transform: scale(1.2);
+                    color: var(--light-color);
+                }
+            }
+
+            ul::before {
+                content: '';
+                width: 35px;
+                height: 2px;
+                background-color: var(--dark-color);
+                display: flex;
+                align-self: center;
+                justify-content: center;
+            }
+
+            ul::after {
+                content: '';
+                width: 35px;
+                height: 2px;
+                background-color: var(--dark-color);
+                align-self: center;
+            }
+        }
+
         .hero {
             display: flex;
-            width: 80%;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
 
             .profilePic {
-                width: 50%;
-                position: relative;
-                margin-left: 2rem;
-
-                .shape1,
-                .shape2,
-                .shape3,
-                .shape4,
-                .shape5,
-                .shape6 {
-                    width: 75%;
-                    height: 100%;
-                    position: absolute;
-                    border-radius: 60px;
-                    box-shadow: inset 1px 1px 10px black;
-                }
-
-                .shape1 {
-                    animation: clockWise 2s linear infinite;
-                    background-color: var(--dark-color);
-                }
-
-                .shape2 {
-                    animation: counterClockWise 4s linear infinite;
-                    background-color: var(--light-color);
-                }
-
-                .shape3 {
-                    animation: clockWise 7s linear infinite;
-                    background-color: var(--dark-color);
-                }
-
-                .shape4 {
-                    animation: counterClockWise 5s linear infinite;
-                    background-color: var(--light-color);
-                }
-
-                .shape5 {
-                    animation: clockWise 3s linear infinite;
-                    background-color: var(--dark-color);
-                }
-
-                .shape6 {
-                    animation: counterClockWise 6s linear infinite;
-                    background-color: var(--light-color);
-                }
-
+                width: 100%;
+                margin: 1rem auto;
+                display: flex;
+                justify-content: center;
                 img {
                     width: cover;
                     border-radius: 50%;
-                    transform: translate(10px, 12px);
-                    position: absolute;
                     box-shadow: var(--shadow);
                 }
             }
 
             .intro {
-                width: 60%;
-
+                width: 100%;
+                padding: 1rem;
                 h5 {
-                    margin-top: -4rem;
+                    margin-top: 4rem;
                 }
 
                 h1 {
-                    margin-bottom: 5rem;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    margin-bottom: 1rem;
+                    text-align: center;
                 }
 
                 .cta-container {
                     display: flex;
                     width: 100%;
+                    margin: 1rem auto;
                     justify-content: center;
 
                     a {
+                        width: 120px;
+                        background-color:var(--bg-color);
+                        color:var(--dark-color);
+                        border: 1px solid var(--dark-color);
                         margin: 0 1rem;
+                        padding: 0.3rem 0rem;
+                        text-align: center;
+                        border-radius: 5px;
+                    }
+                    .cta{
+                        border: 1px solid grey;
+                        background-color: var(--accent-color);
+                        color: var(--dark-color);
+                    
+                    }
+                    a:hover{
+                        background-color: var(--light-color);
                     }
                 }
             }
         }
-
-
-
-        .social {
-            display: flex;
-            flex-direction: column;
-            align-self: center;
-            width: fit-content;
-
-            a {
-                height: fit-content;
-                color: var(--dark-color);
-                font-size: 1.6rem;
-                justify-content: center;
-                margin: .2rem;
-            }
-
-            a:hover {
-                transform: scale(1.2);
-                color: var(--light-color);
-            }
-        }
-
-        .social::before {
-            content: '';
-            width: 2px;
-            height: 35px;
-            margin-bottom: 1rem;
-            background-color: var(--dark-color);
-            align-self: center;
-        }
-
-        .social::after {
-            content: '';
-            width: 2px;
-            height: 35px;
-            margin-top: 1rem;
-            background-color: var(--dark-color);
-            align-self: center;
-        }
-
         .scroll {
+            display: none;
             align-self: flex-end;
             margin-bottom: 4.5rem;
             height: fit-content;
@@ -175,6 +140,7 @@ header {
             writing-mode: vertical-lr;
             animation: shake 0.3s linear infinite;
             animation-direction: alternate;
+
             small {
                 letter-spacing: 2px;
                 font-weight: 800;
@@ -189,6 +155,7 @@ header {
     }
 
     .divider {
+        display: none;
         position: absolute;
         bottom: 0;
         left: 0;

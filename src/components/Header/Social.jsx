@@ -7,13 +7,13 @@ import{BsGithub} from 'react-icons/bs'
 
 const Social = () => {
   return (
-      <div className="social">
+      <ul>
         <a href=""><BsLinkedin /></a>
         <a href=""><BsGithub/></a>
         <a href=""><BsFacebook /></a>
         <a href=""><BsInstagram /></a>
         <a href=""><GrMail/></a>
-    </div>
+    </ul>
   )
 }
 

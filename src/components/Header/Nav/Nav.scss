@@ -1,17 +1,16 @@
 nav {
     width: 100%;
-    margin: 0 auto;
+    height: 3rem;
     position: fixed;
-    padding-bottom: 5rem;
-    z-index: 99;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 9999;
 
     .nav__container {
-        width: 400px;
-        height: 50px;
-        margin-top: -6rem;
-        background-color: rgba(149, 150, 153, 0.384);
-        backdrop-filter: blur(10px);
-        border-radius: 25px;
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(245, 245, 220, 0.534);
+        backdrop-filter: blur(15px);
 
         .menu {
             width: 100%;
@@ -29,7 +28,7 @@ nav {
 
                 a {
                     font-size: 1.3rem;
-                    color: var(--accent-color);
+                    color: var(--dark-color);
                 }
             }
         }

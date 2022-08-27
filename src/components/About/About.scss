@@ -1,19 +1,33 @@
 .about {
     width: 100%;
-    height: 100vh;
+    height:fit-content;
     background-color: var(--dark-color);
     color: white;
+    margin-top: 4rem;
 
     .about__container {
-        padding-top: 5rem;
+        padding:3rem 1.5rem;
     }
 
-    svg {
-        width: 100%;
-        margin-top: -20rem;
-        transform: rotate(180deg);
-        .shape-fill {
-            fill: var(--dark-color)
+    .divider-top{
+        svg {
+            width: 100%;
+            transform: rotate(0deg);
+            margin-top: -7.6rem;
+            .shape-fill {
+                fill: var(--dark-color)
+            }
         }
     }
+    .divider-bottom{
+        svg {
+            width: 100%;
+            transform: rotate(180deg);
+            margin-bottom: -7.6rem;
+            .shape-fill {
+                fill: var(--dark-color)
+            }
+        }
+    }
+
 }
