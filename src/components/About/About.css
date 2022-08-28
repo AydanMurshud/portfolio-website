@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-  height: fit-content;
+  height: auto;
   background-color: var(--dark-color);
   color: white;
   margin-top: 4rem;
@@ -11,7 +11,7 @@
 .about .divider-top svg {
   width: 100%;
   transform: rotate(0deg);
-  margin-top: -7.6rem;
+  margin-top: -15rem;
 }
 .about .divider-top svg .shape-fill {
   fill: var(--dark-color);
@@ -19,8 +19,23 @@
 .about .divider-bottom svg {
   width: 100%;
   transform: rotate(180deg);
-  margin-bottom: -7.6rem;
+  margin-bottom: -10.6rem;
 }
 .about .divider-bottom svg .shape-fill {
   fill: var(--dark-color);
+}
+
+@media only screen and (min-width: 1023px) {
+  .about {
+    margin-top: 6rem;
+  }
+  .about .about__container {
+    height: fit-content;
+  }
+  .about .divider-top svg {
+    margin-top: -12rem;
+  }
+  .about .divider-bottom svg {
+    margin-bottom: -13rem;
+  }
 }/*# sourceMappingURL=About.css.map */
