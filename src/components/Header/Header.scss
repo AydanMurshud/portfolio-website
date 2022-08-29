@@ -13,7 +13,22 @@ header {
     width: 100%;
     height: fit-content;
     overflow: hidden;
-    margin-bottom: 10rem;
+    margin-top: 4rem;
+
+    .divider {
+        bottom: 0;
+        margin-bottom: -.44rem;
+
+        svg {
+            width: 100%;
+
+            transform: rotate(180deg);
+        }
+
+        .shape-fill {
+            fill: var(--dark-color);
+        }
+    }
 
     .header__container {
         height: 100%;
@@ -28,6 +43,7 @@ header {
         .social {
             width: fit-content;
             display: flex;
+            margin-top: 2rem;
             align-items: center;
             justify-self: center;
             position: absolute;
@@ -162,26 +178,6 @@ header {
     }
 }
 
-@media only screen and (min-width:760px) {
-    .header__container {
-        .social {
+@media only screen and (min-width:761px) {}
 
-            margin-top: 2rem;
-        }
-
-        .hero {
-            .intro {
-                p {
-                    width: 70%;
-                    margin: 0rem auto;
-                }
-            }
-        }
-    }
-}
-
-@media only screen and(min-width:1024px) {
-    .header__container {
-        flex-direction: row;
-    }
-}
+@media only screen and(min-width:1025px) {}

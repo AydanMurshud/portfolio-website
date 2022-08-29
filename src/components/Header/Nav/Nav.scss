@@ -34,3 +34,15 @@ nav {
         }
     }
 }
+@media only screen and (min-width:761px) {
+   nav{
+    width: 100%;
+    bottom: 4rem;
+    display: flex;
+    .nav__container{
+        width: auto;
+        align-items: center;
+        border-radius: 25px;
+    }
+   }
+}

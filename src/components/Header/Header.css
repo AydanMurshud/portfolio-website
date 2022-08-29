@@ -10,7 +10,18 @@ header {
   width: 100%;
   height: fit-content;
   overflow: hidden;
-  margin-bottom: 10rem;
+  margin-top: 4rem;
+}
+header .divider {
+  bottom: 0;
+  margin-bottom: -0.44rem;
+}
+header .divider svg {
+  width: 100%;
+  transform: rotate(180deg);
+}
+header .divider .shape-fill {
+  fill: var(--dark-color);
 }
 header .header__container {
   height: 100%;
@@ -25,6 +36,7 @@ header .header__container {
 header .header__container .social {
   width: fit-content;
   display: flex;
+  margin-top: 2rem;
   align-items: center;
   justify-self: center;
   position: absolute;
@@ -137,17 +149,8 @@ header .header__container .scroll small span {
   color: var(--accent-color);
 }
 
-@media only screen and (min-width: 760px) {
-  .header__container .social {
-    margin-top: 2rem;
-  }
-  .header__container .hero .intro p {
-    width: 70%;
-    margin: 0rem auto;
-  }
-}
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .header__container {
-    flex-direction: row;
+    background-color: red;
   }
 }/*# sourceMappingURL=Header.css.map */

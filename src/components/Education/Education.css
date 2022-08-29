@@ -1,3 +1,25 @@
+.education {
+  width: 100%;
+  height: 100vh;
+}
+.education .divider {
+  margin-top: -0.2rem;
+}
+.education .divider svg {
+  width: 100%;
+  transform: rotateX(180deg);
+  transform: rotateY(180deg);
+}
+.education .divider .shape-fill {
+  fill: var(--dark-color);
+}
 .education .education__container {
   padding-top: 6rem;
+}
+
+@media only screen and (min-width: 761px) {
+  .social {
+    background-color: blue;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=Education.css.map */

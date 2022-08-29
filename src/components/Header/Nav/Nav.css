@@ -29,4 +29,17 @@ nav .nav__container .menu .menu-item {
 nav .nav__container .menu .menu-item a {
   font-size: 1.3rem;
   color: var(--dark-color);
+}
+
+@media only screen and (min-width: 761px) {
+  nav {
+    width: 100%;
+    bottom: 4rem;
+    display: flex;
+  }
+  nav .nav__container {
+    width: auto;
+    align-items: center;
+    border-radius: 25px;
+  }
 }/*# sourceMappingURL=Nav.css.map */
