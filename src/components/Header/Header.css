@@ -10,18 +10,20 @@ header {
   width: 100%;
   height: fit-content;
   overflow: hidden;
-  margin-top: 4rem;
 }
 header .divider {
-  bottom: 0;
-  margin-bottom: -0.44rem;
+  height: fit-content;
+  width: 100%;
+  margin-bottom: -8px;
 }
 header .divider svg {
   width: 100%;
+  bottom: 0;
   transform: rotate(180deg);
 }
 header .divider .shape-fill {
   fill: var(--dark-color);
+  margin: 0;
 }
 header .header__container {
   height: 100%;
@@ -151,6 +153,6 @@ header .header__container .scroll small span {
 
 @media only screen and (min-width: 1025px) {
   .header__container {
-    background-color: red;
+    flex-direction: row;
   }
 }/*# sourceMappingURL=Header.css.map */
