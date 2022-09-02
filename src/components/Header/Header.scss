@@ -9,8 +9,8 @@
 }
 
 header {
+    position: relative;
     background-color: var(--bg-color);
-
     .top-divider1 {
         position: absolute;
         top: 0;
@@ -58,7 +58,7 @@ header {
 
     .bottom-divider1 {
         position: absolute;
-        bottom: 0;
+        bottom:0;
         left: 0;
         width: 100%;
         overflow: hidden;
@@ -70,8 +70,8 @@ header {
             position: relative;
             display: block;
             width: calc(100% + 1.3px);
-            height: 164px;
-            animation: waves 12s linear alternate infinite;
+            height: 124px;
+            animation: waves 10s linear alternate infinite;
         }
 
         .shape-fill {
@@ -107,7 +107,7 @@ header {
         display: flex;
         align-items: center;
         height: 100vh;
-
+        z-index:90;
         .profilePic {
             padding: 0 1rem;
 

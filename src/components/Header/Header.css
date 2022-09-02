@@ -7,6 +7,7 @@
   }
 }
 header {
+  position: relative;
   background-color: var(--bg-color);
 }
 header .top-divider1 {
@@ -62,8 +63,8 @@ header .bottom-divider1 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 164px;
-  animation: waves 12s linear alternate infinite;
+  height: 124px;
+  animation: waves 10s linear alternate infinite;
 }
 header .bottom-divider1 .shape-fill {
   fill: var(--dark-color);
@@ -92,6 +93,7 @@ header .header__container {
   display: flex;
   align-items: center;
   height: 100vh;
+  z-index: 90;
 }
 header .header__container .profilePic {
   padding: 0 1rem;

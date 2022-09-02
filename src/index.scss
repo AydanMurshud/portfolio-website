@@ -17,7 +17,7 @@
     --primary-color: #5FAAE3;
     --dark-color: #246BCF;
     --light-color: #7fa4d8;
-    --succes-color:#71A889;
+    --succes-color: #71A889;
     --border-color: grey;
 
     /* Break points */
@@ -31,7 +31,9 @@
 }
 
 html {
+    overflow-x: hidden !important;
     scroll-behavior: smooth;
+    
 }
 
 ::-webkit-scrollbar {
@@ -42,8 +44,8 @@ html {
 body {
     font-family: 'Popins', sans-serif;
     line-height: 1.6;
-    background-color: var(--bg-color);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    position: relative;
 }
 
 section {
