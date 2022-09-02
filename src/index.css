@@ -14,7 +14,8 @@
   --accent-color: #F2CD5D;
   --primary-color: #5FAAE3;
   --dark-color: #246BCF;
-  --light-color: #71A889;
+  --light-color: #7fa4d8;
+  --succes-color:#71A889;
   --border-color: grey;
   /* Break points */
   --width-lg: 70%;
@@ -37,6 +38,7 @@ body {
   font-family: "Popins", sans-serif;
   line-height: 1.6;
   background-color: var(--bg-color);
+  overflow-x: hidden;
 }
 
 section {
@@ -73,11 +75,6 @@ a {
 
 a:hover {
   color: var(--light-color);
-}
-
-.cta {
-  background-color: var(--accent-color);
-  color: var(--primary-color);
 }
 
 /* Media queries */

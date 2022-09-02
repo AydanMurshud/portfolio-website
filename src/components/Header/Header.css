@@ -1,7 +1,54 @@
+@keyframes waves {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 140%;
+  }
+}
 header {
   background-color: var(--bg-color);
 }
-header .divider {
+header .top-divider1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
+header .top-divider1 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 124px;
+  animation: waves 10s linear alternate infinite;
+}
+header .top-divider1 .shape-fill {
+  fill: var(--dark-color);
+}
+header .top-divider2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: translate(150px);
+  z-index: 0;
+}
+header .top-divider2 svg {
+  position: relative;
+  display: block;
+  width: 105%;
+  height: 220px;
+  animation: waves 12s linear alternate infinite;
+}
+header .top-divider2 .shape-fill {
+  fill: var(--light-color);
+}
+header .bottom-divider1 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -9,16 +56,37 @@ header .divider {
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
-  z-index: 0;
+  z-index: 1;
 }
-header .divider svg {
+header .bottom-divider1 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
   height: 164px;
+  animation: waves 12s linear alternate infinite;
 }
-header .divider .shape-fill {
+header .bottom-divider1 .shape-fill {
   fill: var(--dark-color);
+}
+header .bottom-divider2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: translate(-100px) rotate(180deg);
+  z-index: 0;
+}
+header .bottom-divider2 svg {
+  position: relative;
+  display: block;
+  width: 115%;
+  height: 250px;
+  animation: waves 10s linear alternate infinite;
+}
+header .bottom-divider2 .shape-fill {
+  fill: var(--light-color);
 }
 header .header__container {
   display: flex;
@@ -64,17 +132,61 @@ header .header__container .social ul::after {
   height: 60px;
   align-self: center;
 }
+header .header__container .intro {
+  display: flex;
+  flex-direction: column;
+}
+header .header__container .intro .cta-container {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+}
+header .header__container .intro .cta-container .btn {
+  margin: 0 1rem;
+  width: 120px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  border: 1px solid var(--dark-color);
+  border-radius: 5px;
+  box-shadow: 1px 1px 15px grey;
+}
+header .header__container .intro .cta-container .btn:hover {
+  background-color: var(--dark-color);
+  border: 1px solid var(--light-color);
+  color: white;
+}
+header .header__container .intro .cta-container .cta {
+  background-color: var(--accent-color);
+}
 
 @media only screen and (max-width: 1024px) {
+  header .top-divider1 svg {
+    height: 100px;
+  }
+  header .top-divider2 svg {
+    height: 150px;
+  }
+  header .bottom-divider1 svg {
+    height: 250px;
+    width: 130%;
+  }
+  header .bottom-divider2 svg {
+    height: 300px;
+    width: 150%;
+  }
   header .header__container {
     flex-direction: column;
-    margin-top: 5rem;
+    justify-content: center;
   }
   header .header__container .profilePic {
     order: 1;
   }
   header .header__container .social {
     order: 2;
+    margin: 1rem 0;
   }
   header .header__container .social ul {
     flex-direction: row;
@@ -92,5 +204,23 @@ header .header__container .social ul::after {
   }
   header .header__container .intro {
     order: 3;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .top-divider1 svg {
+    height: 80px;
+    width: 220%;
+  }
+  header .top-divider2 svg {
+    height: 100px;
+    width: 220%;
+  }
+  header .bottom-divider1 svg {
+    height: 180px;
+    width: 220%;
+  }
+  header .bottom-divider2 svg {
+    height: 220px;
+    width: 220%;
   }
 }/*# sourceMappingURL=Header.css.map */
