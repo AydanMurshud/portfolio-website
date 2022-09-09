@@ -32,7 +32,7 @@ router.get('/:id', getProject, (req, res) => {
     res.json(res.project)
 })
 /* Update a project */
-router.patch('/:id', getProject, async(req, res) => {
+router.patch('/:id', getProject, async (req, res) => {
     if (req.body.title != null) {
         res.project.title = req.body.title
     }
@@ -40,7 +40,7 @@ router.patch('/:id', getProject, async(req, res) => {
         res.project.description = req.body.description
     }
     try {
-        const updatedProject =await res.project.save()
+        const updatedProject = await res.project.save()
         res.json()
     } catch (error) {
         res.status(400).json({ message: error.message })
