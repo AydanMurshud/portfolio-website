@@ -1,0 +1,26 @@
+GET http://localhost:3001/projects
+
+###
+
+GET  http://localhost:3001/projects/631b6e6d0343cb9cef27eee1
+
+###
+POST http://localhost:3001/projects
+Content-Type: application/json
+
+{
+    "title": "Project 3",
+    "description":"Dummy description"
+}
+
+###
+
+DELETE   http://localhost:3001/projects/631b75f35fb7b646d71fb8dc
+
+###
+PATCH    http://localhost:3001/projects/631b7dce4bb115bea93d42a1
+Content-Type: application/json
+
+{
+    "title": "Project 4"
+}
