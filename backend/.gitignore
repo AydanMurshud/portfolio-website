@@ -1,13 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-<<<<<<< HEAD
-# dependencies ///
-=======
 # dependencies
->>>>>>> 19067481e8c2ae6b2c45ca8fea30e6e5ef10fcb2
 /node_modules
 /.pnp
 .pnp.js
+.rest
 
 # testing
 /coverage
